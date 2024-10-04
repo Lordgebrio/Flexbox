@@ -301,6 +301,8 @@ footer .redes i {
   cursor: pointer;
 }
 
+/* Media Query para tablets */
+
 @media (max-width: 1000px) {
   .learn-more-container {
     display: flex;
@@ -332,6 +334,8 @@ footer .redes i {
     margin: 0 auto;
   }
 }
+
+/* Media Query Mobil */
 
 @media (max-width: 480px) {
   nav {
