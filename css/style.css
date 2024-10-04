@@ -1,0 +1,389 @@
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Variables de colores */
+:root {
+  --verde-claro: #96bb7c;
+  --azul-claro: #ddf4ff;
+  --blanco-secundario: #fff2f3;
+  --fuente-color: #737373;
+  --azul-oscuro: #252b42;
+}
+
+/* Fuente principal */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Montserrat", sans-serif; */
+
+body {
+  width: auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* --- Menu de navegacion --- */
+
+nav {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+nav p {
+  color: var(--azul-oscuro);
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 20px 0;
+}
+
+nav p:hover {
+  color: var(--verde-claro);
+  transition: all 0.5s;
+}
+
+.nav-bar {
+  align-items: center;
+  display: flex;
+  gap: 45px;
+  justify-content: center;
+}
+
+.nav-bar a {
+  color: var(--verde-claro);
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+}
+.nav-bar a:hover {
+  color: var(--azul-oscuro);
+  transition: all 0.5s;
+}
+
+.nav-bar button {
+  background-color: var(--verde-claro);
+  border-style: none;
+  border-radius: 5px;
+  color: var(--blanco-secundario);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  padding: 15px 25px;
+}
+
+.nav-bar button:hover {
+  background-color: var(--azul-oscuro);
+  transition: all 0.5s;
+}
+
+/* ------ Estilos primera seccion ------ */
+.learn-more {
+  background-color: var(--azul-claro);
+  width: 100%;
+}
+
+.learn-more-container {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
+.learn-more-container .container-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: auto;
+  gap: 30px;
+}
+
+.container-text h5 {
+  color: var(--verde-claro);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.container-text h1 {
+  color: var(--azul-oscuro);
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 80px;
+}
+
+.container-text h4 {
+  color: var(--fuente-color);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.container-text .button {
+  gap: 10px;
+}
+
+.button button {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  padding: 15px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button .btn-1 {
+  background-color: var(--verde-claro);
+  border-style: none;
+  color: var(--blanco-secundario);
+}
+
+.button .btn-1:hover {
+  background-color: var(--azul-oscuro);
+  transition: all 0.5s;
+}
+
+.button .btn-2:hover {
+  background-color: var(--azul-oscuro);
+  color: var(--blanco-secundario);
+  transition: all 0.5s;
+}
+
+.button .btn-2 {
+  background-color: transparent;
+  border: 1px solid var(--verde-claro);
+  color: var(--verde-claro);
+}
+
+.learn-more-container .container-image {
+  width: 100%;
+}
+
+.learn-more-container .container-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ------ Estilos de seccion de numeros ------ */
+
+.estadisticas {
+  background-color: #fff;
+}
+
+.container-estadisticas {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  gap: 50px;
+  padding: 80px 0;
+}
+
+.content-text {
+  width: 100%;
+  text-align: center;
+}
+
+.content-text h3 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 80px;
+  color: var(--verde-claro);
+}
+
+.content-text p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--azul-oscuro);
+}
+
+/* ------ Estilos de Educacion ------ */
+
+.education {
+  background-color: var(--blanco-secundario);
+}
+
+.container-education {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 160px 0;
+}
+
+.container-education h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: var(--azul-oscuro);
+  text-align: start;
+}
+
+.container-cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 0 auto;
+}
+
+.card {
+  height: auto;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 35px 40px;
+  display: flex;
+  flex: 1 1 calc(30% - 20px);
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+  width: 72px;
+  height: 72px;
+  padding: 10px;
+  border-radius: 200px;
+  background-color: var(--blanco-secundario);
+}
+
+.card h5 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--azul-oscuro);
+}
+
+.card hr {
+  width: 50px;
+  height: 2px;
+  border-color: #e74040;
+}
+
+.card p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--fuente-color);
+}
+
+/* Estilos del footer */
+
+footer {
+  background-color: #fff;
+  display: flex;
+  padding: 25px 0;
+  justify-content: space-around;
+}
+
+footer h6 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--fuente-color);
+}
+
+footer .redes {
+  display: flex;
+  gap: 20px;
+}
+
+footer .redes i {
+  font-size: 23px;
+  color: var(--verde-claro);
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .learn-more-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .learn-more-container .container-text {
+    width: 100%;
+    padding: 20px 10px;
+  }
+
+  .estadisticas {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container-estadisticas {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .content-text {
+    width: auto;
+    margin: 0 auto;
+  }
+  .content-text {
+    width: auto;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .learn-more-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .learn-more-container .container-text {
+    width: 100%;
+    padding: 20px 10px;
+  }
+
+  .container-text .button {
+    gap: 10px;
+    display: flex;
+  }
+
+  .button button {
+    padding: 15px 20px;
+  }
+
+  .learn-more-container .container-image {
+    display: none;
+  }
+
+  .container-estadisticas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .container-education h2 {
+    text-align: center;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .redes {
+    padding-top: 20px;
+  }
+}
